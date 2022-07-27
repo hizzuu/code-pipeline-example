@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files: 
+  - source: ./code-pipeline-example
+    destination: /home/ec2-user/code-pipeline-example
+permissions:
+  - object: /home/ec2-user/code-pipeline-example
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
+    mode: 700
+    type:
+      - file
+      - directory

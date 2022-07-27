@@ -1,12 +1,10 @@
-version: "3"
+version: "3.8"
 services:
   app:
     container_name: app
     build:
       context: ./build/app
       target: dev
-    env_file:
-      - build/app/.env
     tty: true
     volumes:
       - .:/app

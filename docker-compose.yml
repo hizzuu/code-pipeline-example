@@ -1,0 +1,14 @@
+version: "3"
+services:
+  app:
+    container_name: app
+    build:
+      context: ./build/app
+      target: dev
+    env_file:
+      - build/app/.env
+    tty: true
+    volumes:
+      - .:/app
+    ports:
+      - '8080:8080'

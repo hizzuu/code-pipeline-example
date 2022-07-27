@@ -21,3 +21,7 @@ test:
 .PHONY: lint
 lint:
 	docker-compose run --rm app go vet ./...
+
+.PHONY: build
+build:
+	docker-compose run --rm app go build -o deploy/code-pipeline-example cmd/main.go

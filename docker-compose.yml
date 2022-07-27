@@ -5,8 +5,6 @@ services:
     build:
       context: ./build/app
       target: dev
-    env_file:
-      - build/app/.env
     tty: true
     volumes:
       - .:/app

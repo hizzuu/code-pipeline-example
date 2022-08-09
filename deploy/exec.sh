@@ -8,6 +8,8 @@ FLG=$3
 
 LOGFILE=app.log
 
+cd /home/ec2-user/code-pipeline-example/
+
 if [ -e LOGFILE ]; then
   rm ${LOGFILE}
 fi

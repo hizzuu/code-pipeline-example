@@ -6,5 +6,6 @@ phases:
 artifacts:
   files:
     - code-pipeline-example
+    - exec.sh
     - appspec.yml
   base-directory: deploy

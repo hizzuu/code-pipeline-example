@@ -3,6 +3,8 @@ os: linux
 files: 
   - source: ./code-pipeline-example
     destination: /home/ec2-user/code-pipeline-example
+  - source: ./exec.sh
+    destination: /home/ec2-user/code-pipeline-example
 permissions:
   - object: /home/ec2-user/code-pipeline-example
     pattern: "**"

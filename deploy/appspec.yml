@@ -2,14 +2,14 @@ version: 0.0
 os: linux
 files: 
   - source: ./code-pipeline-example
-    destination: /home/ec2-user/code-pipeline-example
+    destination: /home/appuser/code-pipeline-example
   - source: ./exec.sh
-    destination: /home/ec2-user/code-pipeline-example
+    destination: /home/appuser/code-pipeline-example
 permissions:
-  - object: /home/ec2-user/code-pipeline-example
+  - object: /home/appuser/code-pipeline-example
     pattern: "**"
-    owner: ec2-user
-    group: ec2-user
+    owner: appuser
+    group: appuser
     mode: 700
     type:
       - file

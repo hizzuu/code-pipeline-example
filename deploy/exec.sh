@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# sh /home/appuser/code-pipeline-example/exec.sh test 10 true
 set -eu
 
 NAME=$1
@@ -8,7 +9,7 @@ FLG=$3
 
 LOGFILE=app.log
 
-cd /home/ec2-user/code-pipeline-example/
+cd /home/appuser/code-pipeline-example/
 
 if [ -e LOGFILE ]; then
   rm ${LOGFILE}
